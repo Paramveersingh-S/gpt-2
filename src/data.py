@@ -11,9 +11,9 @@ def prepare_data(config_path: str):
     cfg = load_config(config_path)
     tokenizer = Tokenizer(mode=cfg.tokenizer.mode)
     
-    # We will use stas/openwebtext-10k for faster pipeline iteration
+    # We will use Elriggs/openwebtext-100k for faster pipeline iteration (parquet format)
     # In a real run, this would be "openwebtext"
-    dataset = load_dataset("stas/openwebtext-10k", split="train", trust_remote_code=True)
+    dataset = load_dataset("Elriggs/openwebtext-100k", split="train")
     
     if cfg.data.max_documents > 0:
         dataset = dataset.select(range(min(len(dataset), cfg.data.max_documents)))
