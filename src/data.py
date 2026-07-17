@@ -13,7 +13,7 @@ def prepare_data(config_path: str):
     
     # We will use stas/openwebtext-10k for faster pipeline iteration
     # In a real run, this would be "openwebtext"
-    dataset = load_dataset("stas/openwebtext-10k", split="train")
+    dataset = load_dataset("stas/openwebtext-10k", split="train", trust_remote_code=True)
     
     if cfg.data.max_documents > 0:
         dataset = dataset.select(range(min(len(dataset), cfg.data.max_documents)))

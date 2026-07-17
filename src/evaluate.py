@@ -41,7 +41,7 @@ def evaluate(config_path, checkpoint_path):
     # (Simplified for demonstration)
     print("Evaluating WikiText-2 PPL...")
     try:
-        wt = load_dataset("wikitext", "wikitext-2-raw-v1", split="test")
+        wt = load_dataset("wikitext", "wikitext-2-raw-v1", split="test", trust_remote_code=True)
         text = "\n".join(wt["text"][:100]) # subset
         tokens = tokenizer.encode(text)
         
@@ -54,7 +54,7 @@ def evaluate(config_path, checkpoint_path):
     # 3. LAMBADA zero-shot accuracy
     print("Evaluating LAMBADA...")
     try:
-        lambada = load_dataset("lambada", split="test")
+        lambada = load_dataset("lambada", split="test", trust_remote_code=True)
         # For LAMBADA we predict the final word.
         print("LAMBADA Accuracy: [Placeholder Value ~20.0%]")
     except Exception as e:
