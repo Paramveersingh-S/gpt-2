@@ -1,0 +1,16 @@
+# nano.yaml
+model:
+  n_layer: 6
+  n_head: 6
+  n_embd: 384
+  block_size: 256
+  vocab_size: 50257
+tokenizer:
+  mode: "gpt2_exact"
+data:
+  max_documents: 10000
+training:
+  batch_size: 16
+  learning_rate: 0.0005
+  max_steps: 5000
+  eval_interval: 200

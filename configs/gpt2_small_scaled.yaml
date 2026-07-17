@@ -1,0 +1,16 @@
+# gpt2_small_scaled.yaml
+model:
+  n_layer: 8
+  n_head: 8
+  n_embd: 512
+  block_size: 512
+  vocab_size: 50257
+tokenizer:
+  mode: "gpt2_exact"
+data:
+  max_documents: 50000
+training:
+  batch_size: 8
+  learning_rate: 0.0004
+  max_steps: 10000
+  eval_interval: 500

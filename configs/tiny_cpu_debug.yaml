@@ -1,0 +1,16 @@
+# tiny_cpu_debug.yaml
+model:
+  n_layer: 2
+  n_head: 2
+  n_embd: 64
+  block_size: 64
+  vocab_size: 256
+tokenizer:
+  mode: "gpt2_exact"
+data:
+  max_documents: 10
+training:
+  batch_size: 4
+  learning_rate: 0.001
+  max_steps: 200
+  eval_interval: 50

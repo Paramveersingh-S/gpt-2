@@ -1,0 +1,12 @@
+data/
+checkpoints/
+logs/
+__pycache__/
+*.pt
+*.bin
+prompt*.md
+prompt.md
+.ipynb_checkpoints/
+wandb/
+results/plots/*.png
+results/plots/*.svg
