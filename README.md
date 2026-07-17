@@ -146,3 +146,5 @@ After training the tiny proxy model, the following scores were achieved out-of-t
 - **LAMBADA Zero-Shot:** Successfully evaluated.
 
 *(Note: The model size used above is small/nano. Scaling the parameters and dataset up will shift the curve dynamically according to OpenAI's scaling laws).*
+
+
