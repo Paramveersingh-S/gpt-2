@@ -1,5 +1,8 @@
-# GPT-2 Reproduction
+<p align="center">
+  <img src="assets/logo.png" alt="GPT-2 Reproduction Logo" width="300"/>
+</p>
 
+# GPT-2 Reproduction
 ![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white)
 ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
 ![Hugging Face](https://img.shields.io/badge/Hugging%20Face-FFD21E?style=for-the-badge&logo=huggingface&logoColor=black)
